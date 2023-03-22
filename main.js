@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   menuBtn.addEventListener("click", function() {
     menu.classList.toggle("open");
   });
-  
+
   // Smooth scrolling for anchor links
   const anchors = document.querySelectorAll('a[href^="#"]:not([href="#"])');
 
@@ -68,5 +68,38 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       scrollToTopButton.style.display = 'none';
     }
+  });
+
+  const authModal = document.getElementById('authModal');
+  const closeBtn = document.querySelector('.close');
+  const signUpBtn = document.getElementById('signUpBtn');
+  const switchToSignUp = document.getElementById('switchToSignUp');
+  const switchToSignIn = document.getElementById('switchToSignIn');
+  const signInDiv = document.getElementById('signIn');
+  const signUpDiv = document.getElementById('signUp');
+
+  signUpBtn.addEventListener('click', () => {
+    authModal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    authModal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === authModal) {
+      authModal.style.display = 'none';
+    }
+  });
+
+  switchToSignUp.addEventListener('click', () => {
+    signInDiv.style.display = 'none';
+    signUpDiv.style.display = 'block';
+  });
+
+  switchToSignIn.addEventListener('click', () => {
+    signInDiv.style.display = 'block';
+    signUpDiv.style.display
+    signUpDiv.style.display = 'none';
   });
 });
