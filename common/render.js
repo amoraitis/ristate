@@ -11,7 +11,7 @@
         fetch("common/footer.html")
         .then(response => response.text())
         .then(html => {
-            document.getElementById("footer")[0].innerHTML = html;
+            document.getElementsByTagName("footer")[0].innerHTML = html;
         })
         .then(addEvents);
       })

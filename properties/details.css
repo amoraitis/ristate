@@ -1,0 +1,84 @@
+.property-details-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.property-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.property-type,
+.property-location {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.property-images-carousel {
+  margin-bottom: 2rem;
+}
+
+.property-description,
+.property-financials,
+.property-documents,
+.investment-details,
+.additional-information,
+.disclaimer {
+  margin-bottom: 2rem;
+}
+
+.property-description h2,
+.property-financials h2,
+.property-documents h2,
+.investment-details h2,
+.additional-information h2,
+.disclaimer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.investment-detail,
+.financial-detail {
+  margin-bottom: 0.5rem;
+}
+
+.property-description ul,
+.property-documents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.property-documents li a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.property-documents li a:hover {
+  text-decoration: underline;
+}
+
+.invest-cta {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.invest-button {
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.invest-button:hover {
+  background-color: #2980b9;
+}
+
+.properties-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
