@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+var addEvents = function()
+{
   // Smooth scrolling
   const links = document.querySelectorAll("nav ul li a");
   for (const link of links) {
@@ -102,4 +103,4 @@ document.addEventListener("DOMContentLoaded", function() {
     signUpDiv.style.display
     signUpDiv.style.display = 'none';
   });
-});
+};
