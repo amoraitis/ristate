@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Catamaran';
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
 }
@@ -17,6 +18,18 @@ header {
   padding: 1rem 0;
 }
 
+h3{
+  color: grey;
+}
+
+p {
+  color: grey;
+}
+
+i {
+  color: #bdb4a4;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -24,10 +37,10 @@ nav {
   padding: 0 2rem;
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: #fff;
-  text-decoration: none;
+.logo img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
 }
 
 nav ul {
@@ -81,6 +94,31 @@ main section p {
   margin-bottom: 1rem;
 }
 
+main section.how-it-works{
+    border: 1px solid #ccc;
+    color: white;
+    background: #bdb4a4;
+}
+
+main section.how-it-works .step-container {
+  display: flex;
+}
+
+main section.how-it-works .step-container .step p {
+  color: white;
+}
+
+main section.how-it-works .step-container .step h3{
+  margin: .4em 0;
+  color: white;
+  font-size: 1.8rem;
+}
+
+main section.how-it-works .step-container .step{
+  margin: 0 3em;
+  color: white;
+}
+
 /* Grid container */
 .grid-container {
   display: grid;
@@ -91,15 +129,28 @@ main section p {
 }
 
 .grid-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 20px;
   text-align: center;
+  height: 20em;
 }
 
-.grid-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 1rem;
+.grid-item h3,
+.grid-item p {
+  margin-bottom: .6em;
 }
+
+.grid-item i {
+  margin-bottom: .8em;
+}
+
+
 
 /* Contact form */
 form input, form textarea {
