@@ -1,177 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Invest in prime real estate properties with Ristate, starting from just AED 500 (USD 136). Build your global real estate portfolio today.">
-  <title>Ristate - Reinventing Real Estate Investment</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <header></header>
-  <div class="hero">
-    <h1>Revolutionizing Property Rentals and Investments</h1>
-    <p>Empowering property owners and investors to collaborate on sustainable and modern property renovations for increased rental income</p>
-    <a href="#signup" class="cta">Get Started</a>
-  </div>
-  <div class="modal" id="authModal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="signIn">
-        <h3>Sign In</h3>
-        <form>
-          <label for="loginEmail">Email</label>
-          <input type="email" id="loginEmail" required />
-          <label for="loginPassword">Password</label>
-          <input type="password" id="loginPassword" required />
-          <button type="submit">Sign In</button>
-        </form>
-        <p>Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a></p>
-      </div>
-      <div id="signUp" style="display: none;">
-        <h3>Sign Up</h3>
-        <form>
-          <label for="registerEmail">Email</label>
-          <input type="email" id="registerEmail" required />
-          <label for="registerPassword">Password</label>
-          <input type="password" id="registerPassword" required />
-          <button type="submit">Sign Up</button>
-        </form>
-        <p>Already have an account? <a href="#" id="switchToSignIn">Sign In</a></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Invest in prime real estate properties with Ristate, starting from just AED 500 (USD 136). Build your global real estate portfolio today."
+    />
+    <title>Ristate - Reinventing Real Estate Investment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header></header>
+    <div class="hero">
+      <h1>The modern way for anyone to invest in real estate</h1>
+      <p>
+        Empowering property owners and investors to collaborate on sustainable
+        and modern property renovations for increased rental income
+      </p>
+      <a href="#signup" class="cta">Get Started</a>
+    </div>
+    <div class="modal" id="authModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="signIn">
+          <h3>Sign In</h3>
+          <form>
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required />
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required />
+            <button type="submit">Sign In</button>
+          </form>
+          <p>
+            Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a>
+          </p>
+        </div>
+        <div id="signUp" style="display: none">
+          <h3>Sign Up</h3>
+          <form>
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" required />
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" required />
+            <button type="submit">Sign Up</button>
+          </form>
+          <p>
+            Already have an account? <a href="#" id="switchToSignIn">Sign In</a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <main>
-    <section id="about">
-      <h2>About Ristate</h2>
-      <p>Welcome to Ristate, where we revolutionize the property market by providing a platform that funds sustainable and modern renovations of properties and promotes them in a concept of sharing economy for short/long-term rentals.​</p>
-    </section>
-    <section class="how-it-works">
-      <h2>How It Works</h2>
-      <div class="step-container">
-        <div class="step">
-          <h3>Connect</h3>
-          <p>Property owners and investors connect on our platform</p>
-        </div>
-        <div class="step">
-          <h3>Invest</h3>
-          <p>Investors fund property renovations in exchange for a commission</p>
-        </div>
-        <div class="step">
-          <h3>Renovate</h3>
-          <p>Properties are renovated to modern and sustainable standards</p>
-        </div>
-        <div class="step">
-          <h3>Earn</h3>
-          <p>Property owners and investors earn rental income together</p>
-        </div>
-      </div>
-    </section>
 
-    <section class="for-investors">
-      <h2>Real estate investing made easy</h2>
-      <p>Invest in property renovations without the hassle of property ownership. Diversify your investment portfolio, support sustainable property improvements, and earn passive income from rental properties.</p>
-      <div class="grid-container">
-        <div class="grid-item">
-          <i class="fas fa-dollar-sign fa-3x"></i>
-          <h3>Invest in real estate from only $100</h3>
-          <p>With fractionalised properties there is no mortgage or large down payments required</p>
+    <main>
+      <section id="about">
+        <img
+          class="demo-bg"
+          src="office.png"
+          alt=""
+        />
+        <div class="demo-content">
+          <h2>About Ristate</h2>
+          <p>
+            Welcome to Ristate, where we revolutionize the property market by
+            providing a platform that funds sustainable and modern renovations
+            of properties and promotes them in a concept of sharing economy for
+            short/long-term rentals.​
+          </p>
         </div>
-        <div class="grid-item">
-          <i class="fas fa-chart-pie fa-3x"></i>
-          <h3>Digital and diversified real estate investing</h3>
-          <p>Buy shares in prime rental properties and manage your diversified portfolio online through our mobile app and web platform</p>
+      </section>
+      <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="step-container">
+          <div class="step">
+            <h3>Connect</h3>
+            <p>Property owners and investors connect on our platform</p>
+          </div>
+          <div class="step">
+            <h3>Invest</h3>
+            <p>
+              Investors fund property renovations in exchange for a commission
+            </p>
+          </div>
+          <div class="step">
+            <h3>Renovate</h3>
+            <p>Properties are renovated to modern and sustainable standards</p>
+          </div>
+          <div class="step">
+            <h3>Earn</h3>
+            <p>Property owners and investors earn rental income together</p>
+          </div>
         </div>
-        <div class="grid-item">
-          <i class="fas fa-cogs fa-3x"></i>
-          <h3>Hassle-free ownership</h3>
-          <p>We handle the entire sales process, screen tenants and manage the property, saving you time and money!</p>
-        </div>
-        <div class="grid-item">
-          <i class="fas fa-shield-alt fa-3x"></i>
-          <h3>Trusted entity with real estate expertise</h3>
-          <p>Stake is regulated by Hellenic Capital Market Commission (HCMC)</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="for-homeowners">
-      <h2>For Property Owners</h2>
-      <p>Access funding for property renovations without upfront costs. Increase your rental income, attract more renters, and benefit from professional project management and listing services.</p>
-      <a href="homeowners.html" class="cta-btn">Learn More</a>
-    </section>
-    <hr/>
-    <section id="features">
-      <h2>Why Choose Ristate?</h2>
-      <div class="grid-container">
-        <div class="grid-item">
-          <h3>Accessibility</h3>
-          <p>Invest in real estate with a low entry barrier, making it accessible to investors worldwide.</p>
+      <section class="for-investors">
+        <h2>Real estate investing made easy</h2>
+        <p>
+          Invest in property renovations without the hassle of property
+          ownership. Diversify your investment portfolio, support sustainable
+          property improvements, and earn passive income from rental properties.
+        </p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fas fa-dollar-sign fa-3x"></i>
+            <h3>Invest in real estate from only $100</h3>
+            <p>
+              With fractionalised properties there is no mortgage or large down
+              payments required
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-chart-pie fa-3x"></i>
+            <h3>Digital and diversified real estate investing</h3>
+            <p>
+              Buy shares in prime rental properties and manage your diversified
+              portfolio online through our mobile app and web platform
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-cogs fa-3x"></i>
+            <h3>Hassle-free ownership</h3>
+            <p>
+              We handle the entire sales process, screen tenants and manage the
+              property, saving you time and money!
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-shield-alt fa-3x"></i>
+            <h3>Trusted entity with real estate expertise</h3>
+            <p>
+              Stake is regulated by Hellenic Capital Market Commission (HCMC)
+            </p>
+          </div>
         </div>
-        <div class="grid-item">
-          <h3>Expertise</h3>
-          <p>Benefit from our 20+ years of experience in the real estate industry and strong global network.</p>
+      </section>
+
+      <section id="home-owner" class="for-homeowners">
+        <h2>Do you already own a property?</h2>
+        <p>And you have a renovation in mind? We will find the funds for you!</p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fas fa-hand-holding-heart fa-3x"></i>
+            <h3>Renovation Funding Made Easy</h3>
+            <p>
+              Access funds for property renovations without the burden of
+              upfront costs or traditional loans.
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-hard-hat fa-3x"></i>
+            <h3>Professional Project Management</h3>
+            <p>
+              Benefit from expert oversight and efficient execution of
+              renovation projects with sustainable and modern designs.
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-home fa-3x"></i>
+            <h3>Maximize Your Rental Income</h3>
+            <p>
+              Increase your property's appeal to renters and boost your rental
+              income with expertly executed renovations.
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-tasks fa-3x"></i>
+            <h3>Hands-Free Listing Management</h3>
+            <p>
+              Leave the listing process to us. We handle advertising on popular
+              rental platforms, saving you time and effort.
+            </p>
+          </div>
         </div>
-        <div class="grid-item">
-          <h3>Transparency</h3>
-          <p>Stay informed with clear and transparent information about your investments and returns.</p>
-        </div>
-        <div class="grid-item">
-          <h3>Passive Income</h3>
-          <p>Earn monthly rental income from your investments, providing a steady stream of passive income.</p>
-        </div>
-      </div>
-    </section>
-    <section id="how-it-works investor">
-      <h2>Are you an investor?</h2>
+      </section>
+      <section id="listing-management">
+        <h2>Effortless Listing Management</h2>
+        <img src="iphones-banner.png" alt="Listing management image">
       
-    </section>
-    <section id="how-it-works owner">
-      <h2>Are you an owner?</h2>
-      <div class="grid-container">
-        <div class="grid-item">
-          <i class="fas fa-user-plus fa-3x"></i>
-          <h3>Complete the form</h3>
-          <p>Sign up and complete your onboarding to verify your identity and ensure compliance with regulations.</p>
+        <p>
+          After the renovation amount is gathered, we will manage the online advertising and administration of the property on all relevant platforms.
+        </p>
+      
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fa-solid fa-check"></i>
+            <h3>Multi-Channel Management</h3>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-check"></i>
+            <h3>Answers to guest questions 24X7 and in < 60 min</h3>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-check"></i>
+            <h3>Dynamic pricing Management using AI</h3>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-check"></i>
+            <h3>Payments Management</h3>
+
+          </div>
         </div>
-        <div class="grid-item">
-          <i class="fas fa-search fa-3x"></i>
-          <h3>Browse Opportunities</h3>
-          <p>Explore our hand-picked investment opportunities in prime real estate properties across the globe.</p>
+      </section>
+      
+      <hr />
+      <section id="features">
+        <h2>Why Choose Ristate?</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>Accessibility</h3>
+            <p>
+              Invest in real estate with a low entry barrier, making it
+              accessible to investors worldwide.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Expertise</h3>
+            <p>
+              Benefit from our 20+ years of experience in the real estate
+              industry and strong global network.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Transparency</h3>
+            <p>
+              Stay informed with clear and transparent information about your
+              investments and returns.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Passive Income</h3>
+            <p>
+              Earn monthly rental income from your investments, providing a
+              steady stream of passive income.
+            </p>
+          </div>
         </div>
-        <div class="grid-item">
-          <i class="fas fa-check-circle fa-3x"></i>
-          <h3>Invest</h3>
-          <p>Fund your wallet and start investing in properties with as little as AED 500 (USD 136).</p>
+      </section>
+      <section id="how-it-works investor">
+        <h2>Are you an investor?</h2>
+      </section>
+      <section id="how-it-works owner">
+        <h2>Are you an owner?</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fas fa-user-plus fa-3x"></i>
+            <h3>Complete the form</h3>
+            <p>
+              Sign up and complete your onboarding to verify your identity and
+              ensure compliance with regulations.
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-search fa-3x"></i>
+            <h3>Browse Opportunities</h3>
+            <p>
+              Explore our hand-picked investment opportunities in prime real
+              estate properties across the globe.
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-check-circle fa-3x"></i>
+            <h3>Invest</h3>
+            <p>
+              Fund your wallet and start investing in properties with as little
+              as AED 500 (USD 136).
+            </p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-hand-holding-usd fa-3x"></i>
+            <h3>Grow Your Wealth</h3>
+            <p>
+              Receive monthly rental income, track your investments, and build
+              your global real estate portfolio.
+            </p>
+          </div>
         </div>
-        <div class="grid-item">
-          <i class="fas fa-hand-holding-usd fa-3x"></i>
-          <h3>Grow Your Wealth</h3>
-          <p>Receive monthly rental income, track your investments, and build your global real estate portfolio.</p>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have questions? Get in touch with our team, and we'll be happy to help.</p>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="cta">Submit</button>
-      </form>
-    </section>
-    <section id="signup">
-      <h2>Ready to Invest in Real Estate?</h2>
-      <p>Create your Ristate account today and start building your global real estate portfolio.</p>
-      <a href="#" class="cta" id="signUpBtn">Sign Up Now</a>
-    </section>
-  </main>
-  <footer></footer>
-  <script src="./main.js"></script>
-  <script src="./common/render.js"></script>
-</body>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions? Get in touch with our team, and we'll be happy to
+          help.
+        </p>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="cta">Submit</button>
+        </form>
+      </section>
+      <section id="signup">
+        <h2>Ready to Invest in Real Estate?</h2>
+        <p>
+          Create your Ristate account today and start building your global real
+          estate portfolio.
+        </p>
+        <a href="#" class="cta" id="signUpBtn">Sign Up Now</a>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+    <script src="./common/render.js"></script>
+  </body>
 </html>

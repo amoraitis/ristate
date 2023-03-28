@@ -141,6 +141,19 @@ main section.how-it-works .step-container .step{
   height: 20em;
 }
 
+
+#home-owner .grid-container .grid-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 20em;
+  border: 0;
+  box-shadow: none;
+}
+
 .grid-item h3,
 .grid-item p {
   margin-bottom: .6em;
@@ -150,6 +163,51 @@ main section.how-it-works .step-container .step{
   margin-bottom: .8em;
 }
 
+#listing-management {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#listing-management img{
+  height: auto;
+}
+#listing-management h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#listing-management p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+#listing-management .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#listing-management .grid-item {
+  flex: 1 1 calc(50% - 2rem);
+  text-align: left;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  height:auto;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  gap:0;
+}
+#listing-management .grid-item i,
+#listing-management .grid-item h3{
+  margin: 0 .3em;
+}
+
+@media screen and (max-width: 768px) {
+  #listing-management .grid-item {
+    flex-basis: 100%;
+  }
+}
 
 
 /* Contact form */
@@ -250,4 +308,27 @@ footer {
 
 .close:hover {
   color: #000;
+}
+
+
+#about{
+  display: flex;
+}
+
+#about{
+  overflow: hidden;
+  position: relative;
+  height: 20em;
+}
+#about div{
+  width: 40em;
+  position: relative;
+}
+#about img{
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
