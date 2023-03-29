@@ -82,3 +82,37 @@
   color: #777;
   margin-bottom: 2rem;
 }
+
+.progress-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.progress-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.progress {
+  height: 30px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.progress-info p {
+  margin: 0;
+}
