@@ -57,3 +57,5 @@
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+nav ul li:not(:last-child) { display: none; }
