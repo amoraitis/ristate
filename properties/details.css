@@ -102,8 +102,9 @@
 
 .progress-bar {
   height: 100%;
-  background-color: #4caf50;
+  background-color: #BDB4A4;
   transition: width 0.5s ease-in-out;
+  --bs-progress-bar-bg: #BDB4A4;
 }
 
 .progress-info {
