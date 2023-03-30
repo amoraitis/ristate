@@ -59,3 +59,19 @@
 }
 
 nav ul li:not(:last-child) { display: none; }
+
+@media (max-width: 768px) {
+  nav {
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}

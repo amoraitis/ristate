@@ -1,5 +1,4 @@
-var addEvents = function()
-{
+var addEvents = function () {
   // Smooth scrolling
   const links = document.querySelectorAll("nav ul li a");
   for (const link of links) {
@@ -9,12 +8,16 @@ var addEvents = function()
   function clickHandler(e) {
     e.preventDefault();
     const href = this.getAttribute("href");
-    const offsetTop = document.querySelector(href).offsetTop;
 
-    scroll({
-      top: offsetTop,
-      behavior: "smooth"
-    });
+    if (href.startsWith("#")) {
+
+      const offsetTop = document.querySelector(href).offsetTop;
+
+      scroll({
+        top: offsetTop,
+        behavior: "smooth"
+      });
+    }
   }
 
   // Mobile menu
@@ -25,7 +28,7 @@ var addEvents = function()
   nav.insertBefore(menuBtn, nav.children[0]);
   const menu = document.querySelector("nav ul");
 
-  menuBtn.addEventListener("click", function() {
+  menuBtn.addEventListener("click", function () {
     menu.classList.toggle("open");
   });
 
