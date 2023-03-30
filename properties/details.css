@@ -17,6 +17,11 @@
 
 .property-images-carousel {
   margin-bottom: 2rem;
+  height: 100%;
+  width: auto!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .property-description,

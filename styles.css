@@ -105,36 +105,50 @@ main section.how-it-works{
 
 main section.how-it-works .step-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-direction:row;
+  gap: 1rem; 
+  justify-content: stretch;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.how-it-works .step-container {
+    flex-direction: column;
+  }
 }
 
 main section.how-it-works .step-container .step p {
   color: black;
+  overflow-wrap: normal;
+  text-align: center;
+  width: 100%;
 }
 
 main section.how-it-works .step-container .step h3{
   margin: .4em 0;
   color: white;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 main section.how-it-works .step-container .step{
   color: white;
+  flex-grow: 1;
 }
 
 /* Grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: auto auto;
   gap: 2rem;
   justify-items: center;
   align-items: center;
 }
 
 .grid-item {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
+  flex-wrap: wrap;
   box-sizing: border-box;
   padding: 20px;
   margin-bottom: 20px;
@@ -142,14 +156,15 @@ main section.how-it-works .step-container .step{
   border: 1px solid #ccc;
   border-radius: 20px;
   text-align: center;
-  height: 20em;
+  height: 100%;
+  width: 100%;
 }
 
 
 #home-owner .grid-container .grid-item {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   box-sizing: border-box;
   padding: 20px;
   margin-bottom: 20px;
@@ -166,6 +181,7 @@ main section.how-it-works .step-container .step{
 
 .grid-item i {
   margin-bottom: .8em;
+  text-align: center;
 }
 
 #listing-management {
@@ -319,22 +335,20 @@ footer {
 
 #about{
   display: flex;
+  justify-content: space-between;
 }
 
-#about{
-  overflow: hidden;
-  position: relative;
-  height: 20em;
-}
 #about div{
-  width: 40em;
-  position: relative;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+#about container row{
+  flex-wrap: wrap;
+}
+
 #about img{
-  opacity: 0.6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
+  border: 0;
+  height: 16em;
 }
