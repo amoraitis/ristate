@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.property-description .property-description{
+  margin-bottom: 1rem;
+}
+
 .property-description,
 .property-financials,
 .property-documents,
