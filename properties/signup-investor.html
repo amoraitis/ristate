@@ -1,99 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investor Sign up - Ristate</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./details.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <style>
-        form button {
-            background-color: #bdb4a4 !important;
-        }
+      form button {
+        background-color: #bdb4a4 !important;
+      }
 
-        .container {
-            max-width: 800px;
-        }
+      .container {
+        max-width: 800px;
+      }
 
-        main {
-            margin-bottom: 2em;
-        }
+      main {
+        margin-bottom: 2em;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header></header>
     <main>
-        <div class="container mt-5">
-            <h2>Investor Sign-Up</h2>
-            <p>
-                Please fill in your personal details to complete your investor
-                profile.
-            </p>
-            <form>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" required />
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="dob">Date of Birth</label>
-                        <input type="date" class="form-control" id="dob" required />
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" required />
-                </div>
-                <div class="mb-3">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone" required />
-                </div>
-                <div class="mb-3">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" required />
-                </div>
-                <div class="mb-3">
-                    <label for="nationality">Nationality</label>
-                    <input type="text" class="form-control" id="nationality" required />
-                </div>
-                <div class="mb-3">
-                    <label for="idDocument">Identification Document (ID, Passport)</label>
-                    <input type="file" class="form-control" id="idDocument" required />
-                </div>
-                <div class="mb-3">
-                    <label for="investmentPreferences">Investment Preferences</label>
-                    <textarea class="form-control" id="investmentPreferences" rows="3" required></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="bankName">Bank Name</label>
-                    <input type="text" class="form-control" id="bankName" required />
-                </div>
-                <div class="mb-3">
-                    <label for="accountNumber">Account Number</label>
-                    <input type="text" class="form-control" id="accountNumber" required />
-                </div>
-                <div class="mb-3">
-                    <label for="routingNumber">Routing Number</label>
-                    <input type="text" class="form-control" id="routingNumber" required />
-                </div>
-                <button class="btn" type="submit">Submit</button>
-            </form>
-        </div>
+      <div class="container mt-5">
+        <h2>Investor Sign-Up</h2>
+        <p>
+          Please fill in your personal details to complete your investor
+          profile.
+        </p>
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="dob">Date of Birth</label>
+              <input type="date" class="form-control" id="dob" required />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required />
+          </div>
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" required />
+          </div>
+          <div class="mb-3">
+            <label for="nationality">Nationality</label>
+            <input type="text" class="form-control" id="nationality" required />
+          </div>
+          <div class="mb-3">
+            <label for="idDocument"
+              >Identification Document (ID, Passport)</label
+            >
+            <input type="file" class="form-control" id="idDocument" required />
+          </div>
+          <div class="mb-3">
+            <label for="investmentPreferences">Investment Preferences</label>
+            <textarea
+              class="form-control"
+              id="investmentPreferences"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="bankName">Bank Name</label>
+            <input type="text" class="form-control" id="bankName" required />
+          </div>
+          <div class="mb-3">
+            <label for="accountNumber">Account Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="accountNumber"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="routingNumber">Routing Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="routingNumber"
+              required
+            />
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
     </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
     <script src="../main.js"></script>
     <script src="../common/render.js"></script>
-</body>
-
+  </body>
 </html>
