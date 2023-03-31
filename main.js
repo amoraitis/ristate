@@ -38,10 +38,13 @@ var addEvents = function () {
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+      const href = this.getAttribute("href");
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-      });
+      if (href.startsWith("#")) {
+        document.querySelector(href).scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
     });
   }
 
@@ -107,18 +110,20 @@ var addEvents = function () {
     signUpDiv.style.display = 'none';
   });
 
-  $("#btSignUp").click(function(e){
+  $("#btSignUp").click(function (e) {
+    e.preventDefault();
     var userType = $("#userType")[0].value;
 
-    if (userType === "investor"){
+    if (userType === "investor") {
       window.location.href = window.location.origin + "/properties/signup-investor.html"
     }
-    else if (userType === "property-owner"){
+    else if (userType === "property-owner") {
       window.location.href = window.location.origin + "/properties/signup-owner.html"
     }
   });
 
-  $(".cta .properties").click(function(e){
+  $(".cta .properties").click(function (e) {
+    e.preventDefault();
     window.location.href = window.location.origin + "properties/available.html";
   })
 };
