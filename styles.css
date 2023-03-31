@@ -308,6 +308,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.modal button {
+  background-color: #BDB4A4;
+}
+
 .modal-content {
   background-color: #fff;
   margin: 15% auto;
