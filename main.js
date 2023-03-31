@@ -2,7 +2,9 @@ var addEvents = function () {
   // Smooth scrolling
   const links = document.querySelectorAll("nav ul li a");
   for (const link of links) {
-    link.addEventListener("click", clickHandler);
+    if ($(link).attr("href").startsWith("#")) {
+      link.addEventListener("click", clickHandler);
+    }
   }
 
   function clickHandler(e) {
@@ -36,16 +38,18 @@ var addEvents = function () {
   const anchors = document.querySelectorAll('a[href^="#"]:not([href="#"])');
 
   for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const href = this.getAttribute("href");
+    if ($(anchor).attr("href").startsWith("#")) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
 
-      if (href.startsWith("#")) {
-        document.querySelector(href).scrollIntoView({
-          behavior: 'smooth',
-        });
-      }
-    });
+        if (href.startsWith("#")) {
+          document.querySelector(href).scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      });
+    }
   }
 
   // Scroll to top button
