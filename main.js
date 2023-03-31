@@ -106,4 +106,15 @@ var addEvents = function () {
     signUpDiv.style.display
     signUpDiv.style.display = 'none';
   });
+
+  $("#btSignUp").click(function(e){
+    var userType = $("#userType")[0].value;
+
+    if (userType === "investor"){
+      window.location.href = "/properties/signup-investor.html"
+    }
+    else if (userType === "property-owne"){
+      window.location.href = "/properties/signup-owner.html"
+    }
+  })
 };

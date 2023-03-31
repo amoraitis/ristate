@@ -30,7 +30,7 @@
   <div class="modal" id="authModal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <div id="signIn">
+      <div id="signIn" style="display: none;">
         <h3>Sign In</h3>
         <form>
           <label for="loginEmail">Email</label>
@@ -43,7 +43,7 @@
           Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a>
         </p>
       </div>
-      <div id="signUp" style="display: none">
+      <div id="signUp">
         <h3>Sign Up</h3>
         <form>
           <label for="registerEmail">Email</label>
@@ -56,7 +56,7 @@
             <option value="investor">Investor</option>
             <option value="property-owner">Property Owner</option>
           </select>
-          <button type="submit">Sign Up</button>
+          <button id="btSignUp" type="submit">Sign Up</button>
         </form>
         <p>
           Already have an account? <a href="#" id="switchToSignIn">Sign In</a>
