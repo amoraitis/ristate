@@ -113,8 +113,12 @@ var addEvents = function () {
     if (userType === "investor"){
       window.location.href = "/properties/signup-investor.html"
     }
-    else if (userType === "property-owne"){
+    else if (userType === "property-owner"){
       window.location.href = "/properties/signup-owner.html"
     }
+  });
+
+  $(".cta .properties").click(function(e){
+    window.href = "properties/available.html";
   })
 };
