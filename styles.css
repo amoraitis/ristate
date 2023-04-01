@@ -319,9 +319,9 @@ footer {
 
 .modal-content {
   background-color: #fff;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 2rem;
-  width: 30%;
+  width: 70%;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
